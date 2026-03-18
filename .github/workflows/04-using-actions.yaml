@@ -12,16 +12,18 @@ jobs:
       - name: Printing Folders
         run: ls
 
-    #   - name: Run a one-line script
-    #     run: echo "Hello, World!"
+      - name: Run a one-line script
+        run: echo "Hello, World!"
 
-    #   - name: Use an action to set up Node.js
-    #     uses: actions/setup-node@v3
-    #     with:
-    #       node-version: "14"
+      - name: Use an action to set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
 
-    #   - name: Install dependencies
-    #     run: npm install
+      - name: Install dependencies
+        run: npm install
+        working-directory: 04_using-actions/my-app
 
-    #   - name: Run tests
-    #     run: npm test
+      - name: Run tests
+        run: npm test
+        working-directory: 04_using-actions/my-app
