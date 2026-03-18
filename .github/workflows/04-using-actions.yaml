@@ -22,8 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: 04_using-actions/my-app
+        working-directory: 04_using-actions/react-app
 
       - name: Run tests
         run: npm test
-        working-directory: 04_using-actions/my-app
+        working-directory: 04_using-actions/react-app
