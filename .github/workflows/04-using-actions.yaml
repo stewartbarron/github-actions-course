@@ -1,0 +1,27 @@
+name: 04 - Using Actions
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Printing Folders
+        run: ls
+
+      - name: Run a one-line script
+        run: echo "Hello, World!"
+
+      - name: Use an action to set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
