@@ -1,4 +1,5 @@
 name: 06 - Contexts
+run-name: My custom work flow run name - ${{ github.os }} # Custom run name using the workflow context
 
 on:
   push:
